@@ -2,9 +2,14 @@ import pandas as pd
 import plotly.express as px
 import json
 
+# link com o arquivo json usado
+# https://raw.githubusercontent.com/Markosalves12/geojson_estados-_brasil/main/brasil_estados.json
 caminho_geo_json = r"C:\Dashboardcovid19\geojson\brasil_estados.json"
 caminho_geo_json = caminho_geo_json.replace("\\", "/")
 
+
+# link com o arquivo csv usado
+# https://github.com/Markosalves12/csv_arquivos/blob/main/estadosxdespesas.csv
 caminho_df = r"C:\Dashboardcovid19\Frames\estadosxdespesas.csv"
 caminho_df = caminho_df.replace("\\", "/")
 
@@ -24,3 +29,6 @@ fig.update_layout(
         'x': 0.5,
         'xanchor': 'center',
         'yanchor': 'top'})
+
+# descomente a linha a baixo para visualisar a figura
+# fig.show()
